@@ -42,9 +42,11 @@ export const Todo = () => {
     }
 
     return (
-        <div style={{ height: "800px" }} className="todo_container
-            w-full border border-solid rounded-md border-gray-400
-            p-4 flex flex-col gap-4"
+        <div className="todo_container
+            w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8
+            border border-solid rounded-md border-gray-400
+            p-2 sm:p-4 flex flex-col gap-2 sm:gap-4
+            min-h-[400px] sm:min-h-[600px] md:min-h-[800px]"
         >
             <Input
                 setTodos={setTodos}

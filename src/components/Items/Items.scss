@@ -30,8 +30,7 @@
    }
 
    .completed {
-      text-decoration: line-through 3px
-         var(--black);
+      text-decoration: line-through 3px var(--black);
       color: var(--gray);
    }
 }
@@ -41,12 +40,14 @@
    -webkit-appearance: none;
    width: 20px;
    height: 20px;
+   min-width: 20px;
    border: 2px solid var(--primary);
    border-radius: 6px;
    position: relative;
    cursor: pointer;
    transition: all 0.2s ease-in-out;
    background-color: var(--white);
+   margin-right: 8px;
 
    &:hover {
       border-color: var(--gray);
@@ -69,6 +70,7 @@
       }
    }
 }
+
 .icons_item {
    display: none;
 }

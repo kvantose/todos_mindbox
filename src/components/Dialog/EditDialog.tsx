@@ -49,8 +49,8 @@ export const EditDialog = (
             <Dialog 
                 header="Редактирование задачи" 
                 visible={visible} 
-                style={{ width: '50vw' }}
-                className='bg-gray-900 text-white p-4'
+                style={{ width: '90vw', maxWidth: '600px' }}
+                className='bg-gray-900 text-white p-2 sm:p-4'
                 onHide={() => { if (!visible) return; setVisible(false); }}
                 footer={
                     <div className="flex justify-end gap-2">
@@ -58,20 +58,20 @@ export const EditDialog = (
                             label="Отмена" 
                             icon="pi pi-times" 
                             onClick={() => setVisible(false)} 
-                            className="bg-red-500 text-white hover:bg-red-600 hover:scale-105 transition-all duration-300 p-2"
+                            className="bg-red-500 text-white hover:bg-red-600 hover:scale-105 transition-all duration-300 p-2 text-sm sm:text-base"
                         />
                         <Button 
                             label="Сохранить" 
                             icon="pi pi-check" 
                             onClick={handleSave} 
-                            className="bg-green-500 text-white hover:bg-green-600 hover:scale-105 transition-all duration-300 p-2"
+                            className="bg-green-500 text-white hover:bg-green-600 hover:scale-105 transition-all duration-300 p-2 text-sm sm:text-base"
                         />
                     </div>
                 }
             >
                 <InputTextarea
                     autoFocus
-                    className='w-full border border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500'
+                    className='w-full border border-gray-700 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base'
                     value={editedText}
                     onChange={(e) => setEditedText(e.target.value)}
                     rows={5}

@@ -35,18 +35,18 @@ export const Input = ({ setTodos, toast }: { setTodos: React.Dispatch<React.SetS
 
     return (
         <div className="w-full">
-            <form className="form"
+            <form className="form flex flex-col sm:flex-row gap-2"
                 role="form"
                 onSubmit={handleAdd}
                 onKeyDown={(e) => e.key === "Enter" && handleAdd(e)}>
                 <input
                     type="text"
                     placeholder="Введите задачу"
-                    className="input_form"
+                    className="input_form flex-1 min-w-0 px-3 py-2 text-sm sm:text-base"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                 />
-                <button type="submit" className="btn btn_form">Добавить</button>
+                <button type="submit" className="btn btn_form whitespace-nowrap px-4 py-2 text-sm sm:text-base">Добавить</button>
             </form>
         </div>
     );

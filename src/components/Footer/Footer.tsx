@@ -2,7 +2,7 @@ import "./Footer.scss"
 
 export const Footer = () => {
     return (
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
                 Тестовое задание Frontend intern в Mindbox
             </p>
