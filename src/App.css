@@ -1,0 +1,13 @@
+#root {
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+.App {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 20px;
+   height: 100vh;
+   font-family: var(--font);
+}

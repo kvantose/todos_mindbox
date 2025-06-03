@@ -1,0 +1,35 @@
+.p-tabmenu-nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 20px;
+   background: var(--gray100);
+}
+
+.p-tabmenu
+   .p-tabmenu-nav
+   .p-tabmenuitem
+   .p-menuitem-link {
+   font-family: var(--font);
+   color: var(--primary);
+   background-color: var(--gray100);
+}
+
+.p-highlight {
+   transition: all 0.3s ease-in-out;
+   text-decoration: underline 1px var(--primary);
+   text-underline-offset: 3px;
+   color: var(--primary);
+}
+
+.btn_clear {
+   cursor: pointer;
+   color: var(--primary);
+   border: none;
+   border-radius: 6px;
+   transition: all 0.3s ease-in-out;
+
+   &:hover {
+      color: var(--white);
+   }
+}

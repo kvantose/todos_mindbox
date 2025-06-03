@@ -1,0 +1,12 @@
+.footer_link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary);
+
+    &:hover {
+        color: var(--white);
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+}
