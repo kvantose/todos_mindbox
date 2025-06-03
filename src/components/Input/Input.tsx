@@ -23,7 +23,9 @@ export const Input = ({ setTodos, toast }: { setTodos: React.Dispatch<React.SetS
 
             setTodos((prev) => [
                 {
-                    id: prev.length + 1,
+                    id: prev.length + 100, 
+                    /// после удаления todo, которая прищла из api - todo заданная через input не удаляется и не редактируется. 
+                    // сделал через костыль, пока думаю
                     todo: value,
                     completed: false,
                     userId: 1
